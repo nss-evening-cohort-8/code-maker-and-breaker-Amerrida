@@ -4,7 +4,9 @@ const printToDom = (stringToPrint, divId) => {
     selectedDiv.innerHTML += stringToPrint;
 };
 
+
 const output = '';
+
 
 const wordOutput = () => {
     const inputText = document.getElementById('textArea').value;
