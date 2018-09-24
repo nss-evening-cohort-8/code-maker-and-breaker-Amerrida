@@ -4,18 +4,17 @@ const printToDom = (stringToPrint, divId) => {
     selectedDiv.innerHTML += stringToPrint;
 };
 
-
-const output = '';
-
-
 const wordOutput = () => {
-    const inputText = document.getElementById('textArea').value;
-    let inputWords = inputText.split(' ');
-    for (let i = 0; i < inputWords.length; i++) {
-        let output = inputWords[i];
+    const inputText = document.getElementById('inputWords').value;
+    let typedWords = inputText.split('');
+    let stringBuilder = '';
+    for (let i = 0; i < typedWords.length; i++) {
+        stringBuilder += typedWords[i];
     }
-    printToDom(inputText,'firstButton');
+
+    printToDom(inputText,'codedSecret');
 };
 
 const secretButton = document.getElementById('firstButton');
-secretButton.addEventListener("click", inputWords);
+secretButton.addEventListener("click", wordOutput);
+

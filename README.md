@@ -6,7 +6,7 @@ This is a mini code breaker project
 ## How to run this project
 
 ### Screenshots
-![main screenshot]
+![ insert main screenshot here]
 
 * Use npm to instal http-server : 
 ``` 
